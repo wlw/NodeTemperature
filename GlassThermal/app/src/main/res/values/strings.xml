@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GlassThermal</string>
+    <string name="title_activity_main">Node Thermometer</string>
+    <string name="hello_world">\n\nConnecting</string>
+    <string name="NodeThermal"> Node Thermometer</string>
+    <string name="device_notfound">\n\n No NODE device paired</string>
+    <string name="connecting">\n\nConnecting</string>
+    <string name="device_not_found">\n\ndevice not found</string>
+</resources>

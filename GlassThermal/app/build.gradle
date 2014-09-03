@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'prebuilt-libs'
+    }
+}
+
+android {
+    compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "com.bricksimple.glassthermal"
+        minSdkVersion 19
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/Android.API-1.6.jar')
+    compile files('libs/support-v4-19.0.1.jar')
+}
